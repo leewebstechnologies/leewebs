@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Leewebs Technologies | Leading Web Development and Design Agency in Nigeria</title>
+    <title>Categories</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -55,12 +55,34 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1><i class="fa-solid fa-text-height" style="color: #27aae1;"></i>Basic</h1>
+              <h1><i class="fa-solid fa-pen-to-square" style="color: #27aae1;"></i>Manage Categories</h1>
             </div>        
           </div>
         </div>
        </header>
+    <!-- HEADER END -->
 
+    <!-- MAIN AREA -->
+    <section class="container py-2 mb-4">
+        <div class="row" style="min-height: 50px; background-color: red;">
+            <div class="off-set-lg-1 col-lg-10" style="min-height: 50px; background-color: yellow;">
+                <form action="categories.php" method="POST">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Add New Category</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="title"> <span class="fieldInfo">Category Title: </span></label><br /><br />
+                                <input class="form-control"  type="text" name="title" id="title" placeholder="Type title here">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+     <!-- MAIN AREA END -->
      <!-- FOOTER -->
       <footer class="bg-dark text-white">
         <div class="container">
