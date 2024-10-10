@@ -65,7 +65,7 @@
     <!-- MAIN AREA -->
     <section class="container py-2 mb-4">
         <div class="row" style="min-height: 50px; background-color: red;">
-            <div class="off-set-lg-1 col-lg-10" style="min-height: 50px; background-color: yellow;">
+            <div class="offset-lg-1 col-lg-10" style="min-height: 50px; background-color: yellow;">
                 <form action="categories.php" method="POST">
                     <div class="card">
                         <div class="card-header">
