@@ -1,3 +1,17 @@
+<?php require_once("./includes/db.php"); ?>
+<?php require_once("./includes/functions.php"); ?>
+<?php
+  if (isset($_POST["submit"])) {
+    $category = $_POST["categorytitle"];
+
+    if (empty($category)) {
+      $_SESSION["SuccessMessage"] = "All fields must be filled out!";
+      redirect_to("categories.php");
+    }
+  }
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -64,17 +78,29 @@
 
     <!-- MAIN AREA -->
     <section class="container py-2 mb-4">
-        <div class="row" style="min-height: 50px; background-color: red;">
-            <div class="offset-lg-1 col-lg-10" style="min-height: 50px; background-color: yellow;">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-10" style="min-height: 100vh">
                 <form action="categories.php" method="POST">
-                    <div class="card">
+                    <div class="card bg-secondary text-light mb-3">
                         <div class="card-header">
                             <h1>Add New Category</h1>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body bg-dark">
                             <div class="form-group">
                                 <label for="title"> <span class="fieldInfo">Category Title: </span></label><br /><br />
-                                <input class="form-control"  type="text" name="title" id="title" placeholder="Type title here">
+                                <input class="form-control"  type="text" name="categorytitle" id="title" placeholder="Type title here">
+                            </div><br />
+                            <div class="row">
+                              <div class="col-lg-6 mb-2">
+                                <a href="dashboard.php" class="btn btn-warning col-12">
+                                  <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+                                </a> 
+                              </div>
+                              <div class="col-lg-6 mb-2">
+                                <button type="button" name="submit" class="btn btn-success col-12">
+                                <i class="fa-solid fa-check"></i> Publish
+                                </button>
+                              </div>
                             </div>
                         </div>
                     </div>
