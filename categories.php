@@ -1,5 +1,6 @@
 <?php require_once("./includes/db.php"); ?>
-<?php require_once("./includes/functions.php"); ?>
+<?php require_once("./includes/functions.php");?>
+<?php require_once("./includes/sessions.php"); ?>
 <?php
   if (isset($_POST["submit"])) {
     $category = $_POST["categorytitle"];
