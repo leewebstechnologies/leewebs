@@ -82,7 +82,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1><i class="fa-solid fa-pen-to-square" style="color: #27aae1;"></i>Manage Categories</h1>
+              <h1><i class="fa-solid fa-pen-to-square" style="color: #27aae1;"></i>Add New Post</h1>
             </div>        
           </div>
         </div>
@@ -100,12 +100,20 @@
                 <form action="categories.php" method="POST">
                     <div class="card bg-secondary text-light mb-3">
                         <div class="card-header">
-                            <h1>Add New Category</h1>
+                            <h1>Add New Post</h1>
                         </div>
                         <div class="card-body bg-dark">
                             <div class="form-group">
-                                <label for="title"> <span class="fieldInfo">Category Title: </span></label><br /><br />
-                                <input class="form-control"  type="text" name="categorytitle" id="title" placeholder="Type title here">
+                                <label for="title"> <span class="fieldInfo">Post Title: </span></label><br /><br />
+                                <input class="form-control"  type="text" name="posttitle" id="title" placeholder="Type title here">
+                            </div><br />
+                            <div class="form-group">
+                                <label for="categorytitle"> <span class="fieldInfo">Choose Category: </span></label><br /><br />
+                               <select class="form-control" name="category" id="categorytitle">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                               </select>
                             </div><br />
                             <div class="row">
                               <div class="col-lg-6 mb-2">
