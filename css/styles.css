@@ -1,0 +1,31 @@
+/* NAVBAR */
+.navbar-brand {
+    color: #fff;
+    margin-right:10rem;
+}
+
+.navbar-brand:hover {
+    color: #99bbff;
+}
+
+ul .nav-link {
+    color: #fff;
+}
+
+ul .nav-link:hover {
+    color: #99bbff;
+}
+
+ul .nav-item .navlink {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul .nav-item .navlink:hover {
+    color: #99bbff;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+}
