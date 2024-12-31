@@ -1,4 +1,7 @@
 /* NAVBAR */
+.container .logo {
+   width: 50px;
+}
 .navbar-brand {
     color: #fff;
     margin-right:10rem;
@@ -28,4 +31,10 @@ ul .nav-item .navlink:hover {
 .navbar-collapse {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    nav .container {
+        margin-right: 2rem;
+    }
 }
