@@ -1,6 +1,8 @@
 /* NAVBAR */
-.container .logo {
-   width: 50px;
+.navbarWrapper{
+    top: 0;
+    z-index: 999;
+    position: sticky;
 }
 .navbar-brand {
     color: #fff;
@@ -33,8 +35,8 @@ ul .nav-item .navlink:hover {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-    nav .container {
-        margin-right: 2rem;
-    }
+/* Footer */
+
+.lead {
+    padding-top: 10px;
 }
